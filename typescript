@@ -1,0 +1,89 @@
+Script started on Fri 20 Oct 2017 06:37:07 PM PDT
+devon.wilson1@syccuxas01:~/cs162/Lab4> g++ car.co[Kpp car.h carmain.cpp
+[01m[Kcarmain.cpp:[m[K In function ‘[01m[Kint main()[m[K’:
+[01m[Kcarmain.cpp:40:49:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+   Car sedan1("Toyota","Camry","Silver", 2017, 10[01;35m[K)[m[K;
+                                                 [01;35m[K^[m[K
+[01m[Kcarmain.cpp:40:49:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+[01m[Kcarmain.cpp:40:49:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+devon.wilson1@syccuxas01:~/cs162/Lab4> make
+g++ -c -Wall carmain.cpp
+[01m[Kcarmain.cpp:[m[K In function ‘[01m[Kint main()[m[K’:
+[01m[Kcarmain.cpp:40:49:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+   Car sedan1("Toyota","Camry","Silver", 2017, 10[01;35m[K)[m[K;
+                                                 [01;35m[K^[m[K
+[01m[Kcarmain.cpp:40:49:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+[01m[Kcarmain.cpp:40:49:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+g++ -c -Wall car.cpp
+g++ carmain.o car.o -o prog
+devon.wilson1@syccuxas01:~/cs162/Lab4> ...[K[K/prog
+Just after array is created
+printing 0 car in array
+======Car======
+Make: 
+Model: 
+Color: 
+Year: 0
+In stock total: 0
+printing 1 car in array
+======Car======
+Make: 
+Model: 
+Color: 
+Year: 0
+In stock total: 0
+Printing the sedan1 info 
+======Car======
+Make: Toyota
+Model: Camry
+Color: Silver
+Year: 2017
+In stock total: 10
+Changing year total to -2017 (this should print an error and not change the value)
+Invalid year.  Needs to be larger than or equal to 0.
+year is now 2017
+Changing in stock total to -3 (this should print an error and not change the value)
+in stock total is now -3
+setting array values and getting values of array
+for car 0
+make? mitsubishi
+model? gelant
+color? grey
+year? 2017
+how many in stock? 10
+for car 1
+make? subaru
+model? wrx
+color? black
+year? 2071
+how many in stock? 20
+getting car 0 information with getters
+make: mitsubishi
+model: gelant
+color: grey
+year: 2017
+in stock total: 10
+printing car 0 information again
+======Car======
+Make: mitsubishi
+Model: gelant
+Color: grey
+Year: 2017
+In stock total: 10
+getting car 1 information with getters
+make: subaru
+model: wrx
+color: black
+year: 2071
+in stock total: 20
+printing car 1 information again
+======Car======
+Make: subaru
+Model: wrx
+Color: black
+Year: 2071
+In stock total: 20
+devon.wilson1@syccuxas01:~/cs162/Lab4> exit
+exit
+
+Script done on Fri 20 Oct 2017 06:39:38 PM PDT
